@@ -17,7 +17,7 @@ compression_windows=(1 3 7)
 max_ref_counts=(-1 1 3)
 
 # Prepare results file
-echo "Graph Name, Max Ref Count, Compression Window, File Size" > size_$graph_name.csv
+echo "Graph Name, Max Ref Count, Compression Window, Graph Size, Offset Size" > size_$graph_name.csv
 
 # Loop through all combinations
 for compression_window in "${compression_windows[@]}"; do
@@ -32,21 +32,30 @@ for compression_window in "${compression_windows[@]}"; do
         
         # Construct the file path
         graph_file="${graph_path}_${ref_name}_w-${compression_window}.graph"
+        offsets_file="${graph_path}_${ref_name}_w-${compression_window}.offsets"
         
         # Check if the file exists
         if [ ! -f "$graph_file" ]; then
             echo "File not found: $graph_file"
             continue
         fi
+        
+        # Use du -b to obtain the byte dimension of the graph file
+        graph_size=$(du -b "$graph_file" | cut -f1)
+        # Convert to MB
+        graph_size_mb=$(awk "BEGIN {printf \"%.2f\", $graph_size/1048576}")
 
-        # Execute the du command and collect the result
-        file_size=$(du -h "$graph_file" | cut -f1)
-
+        # Use du -b to obtain the byte dimension of the offsets file
+        offsets_size=$(du -b "$offsets_file" | cut -f1)
+        # Convert to MB
+        offsets_size_mb=$(awk "BEGIN {printf \"%.2f\", $offsets_size/1048576}")
+        
         # Save results to CSV
-        echo "$graph_name, $max_ref_count, $compression_window, $file_size" >> size_$graph_name.csv
+        echo "$graph_name, $max_ref_count, $compression_window, ${graph_size_mb}MB", ${offsets_size_mb}MB >> size_$graph_name.csv
 
         echo "Collected size for graph: $graph_name, max-ref-count: $max_ref_count, compression-window: $compression_window"
     done
 done
+
 
 echo "All executions completed. Results saved to size_$graph_name.csv."
