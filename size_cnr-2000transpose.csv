@@ -1,0 +1,10 @@
+Graph Name, Max Ref Count, Compression Window, Graph Size, Offset Size
+cnr-2000transpose, -1, 1, 0.90MB, 0.31MB
+cnr-2000transpose, 1, 1, 1.03MB, 0.33MB
+cnr-2000transpose, 3, 1, 0.95MB, 0.31MB
+cnr-2000transpose, -1, 3, 0.85MB, 0.30MB
+cnr-2000transpose, 1, 3, 0.96MB, 0.32MB
+cnr-2000transpose, 3, 3, 0.90MB, 0.31MB
+cnr-2000transpose, -1, 7, 0.84MB, 0.30MB
+cnr-2000transpose, 1, 7, 0.95MB, 0.33MB
+cnr-2000transpose, 3, 7, 0.90MB, 0.32MB
