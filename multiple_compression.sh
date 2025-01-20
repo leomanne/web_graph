@@ -26,7 +26,7 @@ for compression_window in "${compression_windows[@]}"; do
         fi
 
         # Run the cargo command
-        cargo run --release -- to bvgraph ${graph_name} ${graph_name}_${ref_name}_w-${compression_window} --max-ref-count=${max_ref_count} --compression-window=${compression_window}
+        cargo run --release -- to bvgraph ${graph_name} ${graph_name}_${ref_name}_w-${compression_window} --max-ref-count=${max_ref_count} --compression-window=${compression_window} --min-interval-length=3
 
         echo "Executed with graph: $graph_name, max-ref-count: $max_ref_count, compression-window: $compression_window"
     done
