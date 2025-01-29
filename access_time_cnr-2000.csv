@@ -1,0 +1,19 @@
+graph_name,compression_window,max_ref_count,link_access_time
+../webgraph-rs/graphs/cnr/cnr-2000_r-inf_w-1,1,-1,Average link access time: 0.000011692 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-inf_w-1,1,-1,Average link access time: 0.000003761 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-1_w-1,1,1,Average link access time: 0.000000186 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-1_w-1,1,1,Average link access time: 0.000000166 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-3_w-1,1,3,Average link access time: 0.000000278 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-3_w-1,1,3,Average link access time: 0.000000229 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-inf_w-3,3,-1,Average link access time: 0.000058149 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-inf_w-3,3,-1,Average link access time: 0.000004223 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-1_w-3,3,1,Average link access time: 0.000000227 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-1_w-3,3,1,Average link access time: 0.000000182 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-3_w-3,3,3,Average link access time: 0.000000326 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-3_w-3,3,3,Average link access time: 0.000000269 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-inf_w-7,7,-1,Average link access time: 0.000061449 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-inf_w-7,7,-1,Average link access time: 0.000005453 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-1_w-7,7,1,Average link access time: 0.000000228 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-1_w-7,7,1,Average link access time: 0.000000189 seconds
+../webgraph-rs/graphs/cnr/cnr-2000_r-3_w-7,7,3,Average link access time: 0.000000351 seconds
+../webgraph-rs/graphs/cnr/cnr-2000transpose_r-3_w-7,7,3,Average link access time: 0.000000304 seconds
