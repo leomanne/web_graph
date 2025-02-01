@@ -1,7 +1,7 @@
 #!/bin/bash
 
-graph_name=$1  # Il nome del grafo passato come argomento
-destination_folder="../webgraph-rs/graphs"  # La cartella di destinazione
+graph_name=$1
+destination_folder="../webgraph/graphs"
 
 if [ -z "$graph_name" ] || [ -z "$destination_folder" ]; then
     echo "Usage: $0 <graph_name> <destination_folder>"
@@ -13,5 +13,5 @@ for ext in .properties .graph; do
 done
 
 cd $destination_folder
-cargo run --release -- build offsets "$graph_name"  # Costruisce gli offset del grafo
-cargo run -- build ef "$graph_name"  # Costruisce la struttura EF del grafo
+source setcp.sh
+java it.unimi.dsi.webgraph.BVGraph -O "$graph_name"

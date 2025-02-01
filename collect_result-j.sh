@@ -15,7 +15,7 @@ compression_windows=(1 3 7)
 max_ref_counts=(-1 1 3)
 
 # Prepare results file
-echo "Graph Name, Max Ref Count, Compression Window, Avg Ref Chain, Bits/Node, Bits/Link" > results_$graph_name.csv
+echo "Graph Name, Max Ref Count, Compression Window, Avg Ref Chain, Bits/Node, Bits/Link" > results_j_$graph_name.csv
 
 # Loop through all combinations
 for compression_window in "${compression_windows[@]}"; do
@@ -29,12 +29,12 @@ for compression_window in "${compression_windows[@]}"; do
 
         # Extract values from the generated properties file
         properties_file="${graph_path}_${ref_name}_w-${compression_window}.properties"
-        avg_ref_chain="0"
+        avg_ref_chain=$(grep -E "avgref=" "$properties_file" | cut -d'=' -f2)
         bits_per_node=$(grep -E "bitspernode=" "$properties_file" | cut -d'=' -f2)
         bits_per_link=$(grep -E "bitsperlink=" "$properties_file" | cut -d'=' -f2)
 
         # Save results to CSV
-        echo "$graph_name, $max_ref_count, $compression_window, $avg_ref_chain, $bits_per_node, $bits_per_link" >> results_$graph_name.csv
+        echo "$graph_name, $max_ref_count, $compression_window, $avg_ref_chain, $bits_per_node, $bits_per_link" >> results_j_$graph_name.csv
 
         echo "Collected results for graph: $graph_path, max-ref-count: $max_ref_count, compression-window: $compression_window"
     done
