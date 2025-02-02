@@ -1,0 +1,10 @@
+Graph Name, Max Ref Count, Compression Window, Graph Size, Offset Size
+webbase-2001transpose, -1, 1, 342.62MB, 107.89MB
+webbase-2001transpose, 1, 1, 391.94MB, 114.84MB
+webbase-2001transpose, 3, 1, 363.03MB, 110.78MB
+webbase-2001transpose, -1, 3, 323.04MB, 106.30MB
+webbase-2001transpose, 1, 3, 364.36MB, 114.31MB
+webbase-2001transpose, 3, 3, 342.64MB, 110.59MB
+webbase-2001transpose, -1, 7, 315.31MB, 105.67MB
+webbase-2001transpose, 1, 7, 358.34MB, 114.33MB
+webbase-2001transpose, 3, 7, 337.93MB, 111.04MB

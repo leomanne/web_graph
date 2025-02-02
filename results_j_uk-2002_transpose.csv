@@ -1,0 +1,10 @@
+Graph Name, Max Ref Count, Compression Window, Avg Ref Chain, Bits/Node, Bits/Link
+uk-2002_transpose, -1, 1, 10.644, 28, 1.74
+uk-2002_transpose, 1, 1, 0.299, 34.237, 2.127
+uk-2002_transpose, 3, 1, 0.754, 30.593, 1.901
+uk-2002_transpose, -1, 3, 13.586, 26.125, 1.623
+uk-2002_transpose, 1, 3, 0.464, 30.69, 1.907
+uk-2002_transpose, 3, 3, 1.085, 28.26, 1.756
+uk-2002_transpose, -1, 7, 15.357, 25.368, 1.576
+uk-2002_transpose, 1, 7, 0.54, 29.577, 1.837
+uk-2002_transpose, 3, 7, 1.285, 27.411, 1.703

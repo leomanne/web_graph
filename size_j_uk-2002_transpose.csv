@@ -1,0 +1,10 @@
+Graph Name, Max Ref Count, Compression Window, Graph Size, Offset Size
+uk-2002_transpose, -1, 1, 61.82MB, 17.96MB
+uk-2002_transpose, 1, 1, 75.59MB, 19.09MB
+uk-2002_transpose, 3, 1, 67.54MB, 18.41MB
+uk-2002_transpose, -1, 3, 57.68MB, 17.66MB
+uk-2002_transpose, 1, 3, 67.76MB, 18.87MB
+uk-2002_transpose, 3, 3, 62.39MB, 18.28MB
+uk-2002_transpose, -1, 7, 56.01MB, 17.54MB
+uk-2002_transpose, 1, 7, 65.30MB, 18.83MB
+uk-2002_transpose, 3, 7, 60.52MB, 18.29MB

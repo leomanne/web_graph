@@ -16,8 +16,11 @@ max_ref_counts=(-1 1 3)
 cd ../webgraph
 source setcp.sh
 
+# Increase Java heap size
+JAVA_OPTS="-Xms4G -Xmx8G"
+
 # Transpose the graph first
-java it.unimi.dsi.webgraph.Transform transpose "${graph_name}" "${graph_name}_transpose"
+java $JAVA_OPTS it.unimi.dsi.webgraph.Transform transpose "${graph_name}" "${graph_name}_transpose"
 echo "Transposed graph: ${graph_name}_transpose"
 
 # Loop through all parameter combinations
