@@ -52,7 +52,7 @@
      }
      
      if link_access_count > 0 {
-         println!("Average link access time: {:.9} seconds", total_link_access_time / link_access_count as f64);
+         println!("{:.9}", total_link_access_time / link_access_count as f64);
      } else {
          println!("No links accessed.");
      }

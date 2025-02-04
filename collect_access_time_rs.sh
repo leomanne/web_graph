@@ -7,7 +7,8 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Assign input argument to variable
-graph_name=$1
+graph_path=$1
+graph_name=$(basename "$graph_path")
 
 # Define arrays for the parameters
 compression_windows=(1 3 7)
@@ -16,7 +17,7 @@ max_ref_counts=(-1 1 3)
 cd ../webgraph-rs
 
 # Create CSV file and add header
-echo "graph_name,compression_window,max_ref_count,link_access_time" > results.csv
+echo "Graph Name,Compression Window,Avg Ref Chain,link_access_time" > access_time_rs_$graph_name.csv
 
 # Loop through all combinations
 for compression_window in "${compression_windows[@]}"; do
@@ -29,16 +30,12 @@ for compression_window in "${compression_windows[@]}"; do
         fi
 
         # Construct the graph filenames
-        graph_filename="${graph_name}_${ref_name}_w-${compression_window}"
-        transpose_graph_filename="${graph_name}transpose_${ref_name}_w-${compression_window}"
+        graph_filename="${graph_path}_${ref_name}_w-${compression_window}"
         
         # Run link access time measurement and collect results
         link_access_time=$(cargo run --release --example=link_access_time -- ${graph_filename} | tail -n 1)
-        echo "${graph_filename},${compression_window},${max_ref_count},${link_access_time}" >> results.csv
-        
-        link_access_time_transpose=$(cargo run --release --example=link_access_time -- ${transpose_graph_filename} | tail -n 1)
-        echo "${transpose_graph_filename},${compression_window},${max_ref_count},${link_access_time_transpose}" >> results.csv
+        echo "${graph_filename},${compression_window},${max_ref_count},${link_access_time}" >> access_time_rs_$graph_name.csv
     done
 done
 
-echo "All measurements completed. Results saved in results.csv"
+echo "All measurements completed. Results saved in access_time_rs_$graph_name.csv"

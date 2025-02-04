@@ -1,0 +1,10 @@
+Graph Name,Compression Window,Avg Ref Chain,link_access_time
+./graphs/uk/uk-2002_r-inf_w-1,1,-1,Average link access time: 0.000011154 seconds
+./graphs/uk/uk-2002_r-1_w-1,1,1,Average link access time: 0.000000267 seconds
+./graphs/uk/uk-2002_r-3_w-1,1,3,Average link access time: 0.000000398 seconds
+./graphs/uk/uk-2002_r-inf_w-3,3,-1,11046682
+./graphs/uk/uk-2002_r-1_w-3,3,1,Average link access time: 0.000000291 seconds
+./graphs/uk/uk-2002_r-3_w-3,3,3,Average link access time: 0.000000440 seconds
+./graphs/uk/uk-2002_r-inf_w-7,7,-1,11046682
+./graphs/uk/uk-2002_r-1_w-7,7,1,Average link access time: 0.000000304 seconds
+./graphs/uk/uk-2002_r-3_w-7,7,3,Average link access time: 0.000000475 seconds
