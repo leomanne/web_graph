@@ -1,7 +1,7 @@
-Graph Name,Max Ref Count (R),Graph Size (MiB),Offset Size (seq.),Offset Size (J=1),Offset Size (J=2),Offset Size (J=4),Link Access Time (seq.),Link Access Time (J=1),Link Access Time (J=2),Link Access Time (J=4)
-.uk,∞,79.0,-,-,-,-,198,31237,35752,43699
-.uk,3,106.6,-,141.3,70.7,35.3,206,611,753,886
-.uk,1,122.9,-,-,-,-,233,442,491,605
-Transpose,∞,70.3,-,-,-,-,150,2382,2873,2961
-Transpose,3,74.6,-,141.3,70.7,35.3,171,342,424,516
-Transpose,1,78.8,-,-,-,-,183,234,312,374
+GraphName,MaxRefCount,GraphSize,OffsetSize (J=1),OffsetSize (J=2),OffsetSize (J=4),Link Access Time (seq.),Link Access Time (J=1),Link Access Time (J=2),Link Access Time (J=4)
+uk-2002,-1,79,-,-,-,198,31237,35752,43699
+uk-2002,3,106.6,141.3,70.7,35.3,206,611,753,886
+uk-2002,1,122.9,-,-,-,233,442,491,605
+uk-2002_transpose,-1,70.3,-,-,-,150,2382,2873,2961
+uk-2002_transpose,3,74.6,141.3,70.7,35.3,171,342,424,516
+uk-2002_transpose,1,78.8,-,-,-,183,234,312,374

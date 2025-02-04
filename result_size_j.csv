@@ -1,4 +1,4 @@
-Graph Name, Max Ref Count, Compression Window, Graph Size, Offset Size
+GraphName,MaxRefCount,CompressionWindow,GraphSize,OffsetSize
 uk-2002,-1,1,78.25,18.81
 uk-2002,1,1,110.02,20.81
 uk-2002,3,1,93.09,19.74

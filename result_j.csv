@@ -1,4 +1,4 @@
-GraphName, MaxRefCount, CompressionWindow, AvgRefChain, BitsNode, BitsLink
+GraphName,MaxRefCount,CompressionWindow,AvgRefChain,BitsNode,BitsLink
 uk-2002,-1,1,50.084,35.444,2.202
 uk-2002,1,1,0.351,49.83,3.096
 uk-2002,3,1,0.993,42.164,2.619
